@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+:root{
+    --mainColor: #CD9730;
+    --subColor : #206C45;
+    --roColor : #CD3030;
+}
+
+.list-unstl{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    padding: 20px 0;
+}
+
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content img{
+    flex: 0;
+    width: 80px;
+    height: 90px;
+}
+
+.header-content nav  {
+    flex: 5;
+    text-align: right;
+}
+
+.header-content ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px ;
+    padding: 0 10px;
+}
+
+.header-content ul li i {
+    padding: 6px;
+    color: var(--mainColor);
+    font-size: 20px;
+}
+
+.header-content ul li a{
+    color: var(--subColor);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-content ul button{
+    background-color: var(--mainColor);
+    border: none;
+    width: 80px;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.header-content ul button:hover{
+    background-color: var(--subColor);
+}
+
+.header-content ul li:hover{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+/* dropdown */
+.dropdown{
+    position: relative;
+}
+
+
+.dropdown-menu{
+    position: absolute;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0.5;
+}
+
+.dropdown:hover .dropdown-menu{
+    transform: scale(1);
+}
+
+.dropdown-menu ul {
+    width: 310px;
+    background-color: white;
+    padding: 20px 4px;
+    text-align: left;
+}
+
+.dropdown-menu ul li{
+    line-height: 2.5;
+}
+
+.dropdown-menu ul li a{
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+}
+/* mini-header */
+
+.mini-header{
+    background-color: var(--mainColor);
+}
+
+.mini-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.mini-content h2{
+    font-size: 13px;
+    color: white;
+}
+
+/* Home */
+
+section.home {
+    background-image: url(../images/jppp.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .home-top{
+    display: flex;
+    justify-content: center;
+    padding: 30px 420px;
+    margin: 0 30px;
+}
+
+.home .home-top img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+
+.home-top .home-top-info h2 {
+    margin-bottom: 40px;
+}
+
+.home-top .home-top-info h3{
+    line-height: 1.6;
+    color: gray;
+    font-weight: normal;
+}
+
+.home .button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.home .button .button-content{
+    margin: 20px 40px;
+}
+
+.home .button .suiv-btn.mg{
+    margin: 0 20px;
+}
+
+
+.button .button-content button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.button .nv-btn {
+    background-color: var(--subColor);
+    color: white;
+    transition: 0.5s;
+    border: none;
+}
+
+.button .nv-btn a , .button .cas-btn a{
+    color: white;
+}
+
+
+.button .suiv-btn {
+    background-color: white;
+    color: var(--subColor);
+    border: 2px solid var(--subColor);
+    transition: 0.5s;
+}
+
+.button .suiv-btn a{
+    color: var(--subColor);
+}
+
+.button .cas-btn {
+    background-color: var(--roColor);
+    color: white;
+    transition: 0.5s;
+    border: none;
+}
+
+.button .button-content button:hover{
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* a propos */
+
+section.a-propos{
+    background-color: var(--subColor);
+    padding: 20px;
+}
+
+section.a-propos .info-content{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+section.a-propos .info-content img{
+    margin-right: 120px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+section.a-propos .info-content .a-info {
+    margin: 60px 0;
+}
+section.a-propos .info-content .a-info h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 40px;
+    
+}
+
+section.a-propos .info-content .a-info h3{
+    color: white;
+    margin-bottom: 25px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+section.a-propos .info-content .a-info .info-btn a{
+    color: white;
+}
+section.a-propos .info-content .a-info .info-btn{
+    background-color: var(--subColor);
+    border: 2px solid white;
+    width: 120px;
+    padding: 10px;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+section.a-propos .info-content .a-info .info-btn:hover{
+    background-color: var(--mainColor);
+    
+}
+
+/* Procedures */
+
+section.procedure{
+    background-image: url(../images/jppp.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section .head-sec {
+    padding: 50px;
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+section .proc-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section .proc-content .proc-item i{
+    font-size: 90px;
+    margin-bottom: 20px;
+    color: var(--subColor);
+    font-weight: normal;
+}
+
+section .proc-content .proc-item h2{
+    font-size: 16px;
+    color: var(--subColor);
+    text-transform: uppercase;
+}
+
+
+section .proc-content .proc-item.mg{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+section .line{
+    background-color: var(--mainColor);
+    height: 15px;
+    margin-top: 30px;
+}
+
+.procedure .vid-content{
+    display: flex;
+    justify-content: center;
+}
+
+.procedure .vid-content .vid-item{
+    margin: 10px 20px 60px 20px;
+    
+}
+
+/* footer */
+
+footer{
+    padding: 30px 0;
+    background-color: var(--subColor);
+}
+footer .fot-head h2{
+    font-size: 16px;
+    color: var(--mainColor);
+    margin-bottom: 10px;
+}
+
+footer .fot-head .fot-line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--mainColor);
+}
+
+footer .fot-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+footer .fot-content .fot-item h2{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+footer .fot-content .fot-item ul li a {
+    line-height: 1.7;
+    color: white;
+    font-weight: normal;
+}
+
+footer .fot-content .fot-item .social{
+    text-align: center;
+}
+footer .fot-content .fot-item i {
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+footer .fot-content .fot-item i:hover{
+    background-color: var(--mainColor);
+}

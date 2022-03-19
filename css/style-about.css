@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #FAFAFA;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+:root{
+    --mainColor: #CD9730;
+    --subColor : #206C45;
+    --roColor : #CD3030;
+}
+
+
+section .topp{
+    background-color: white;
+    padding: 70px 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section .topp .nouv-title{
+    text-align: center;
+    color: var(--subColor);
+    margin-bottom: 20px;
+}
+
+section .topp .nouv-subt{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+section .topp .linee{
+    width: 100%;
+    height: 15px;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+
+section .topp .presen-tit{
+    color: var(--subColor);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+section .topp .presen-desc{
+    margin-bottom: 15px;
+    color: black;
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+section .topp ul {
+    margin: 0 30px;
+    margin-bottom: 15px;
+
+}
+
+section .topp ul li{
+    line-height: 1.9;
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+section .topp ul.pro-list .pro-li-list ul li{
+    margin-bottom: 2px;
+    color: #CD3030;
+}
+
+section .topp ul li span{
+    font-weight: bold;
+}
+
+section .topp .nouv-su{
+    color: var(--subColor);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+section .topp .nouv-susu{
+    color: black;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section .topp img{
+    width: 100%;
+}
+
+/*reglment*/
+section .topp p {
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* timbre */
+
+section .topp p.tmbr{
+    color: var(--roColor);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* service nouveau */
+
+section .topp .cree-title{
+    text-align: center;
+    color: var(--subColor);
+    font-size: 30px;
+}
+
+section .topp .dem-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section .topp .dem-content .linne-hor{
+    height: 280px;
+    width: 2px;
+    background-color: gray;
+    margin-top: 20px;
+    opacity: 0.6;
+
+}
+
+section .topp .dem-content .dem-item{
+   width: 600px;
+   padding: 20px;
+   margin: 20px 30px;
+}
+
+section .topp .dem-content img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+section .topp .dem-content .dem-item .dem-title{
+    color: var(--subColor);
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+section .topp .dem-content .dem-item .dem-desc{
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.demm-content{
+    margin-top: 30px;
+    text-align: center;
+    display: grid;
+}
+.demm-content span.linne-vere {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.6;
+}
+
+.demm-content .d-title{
+    font-size: 16px;
+    margin: 10px 0;
+    color: var(--subColor);
+}
+
+.demm-content .d-title span{
+    font-size: 16px;
+    margin: 10px 0;
+    color: blue;
+}
+
+.demm-content .d-desc{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.demm-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.demm-btn .premier , .demm-btn .renouv , .suiv-item1 .btn .suiv-btn ,
+section .topp .cas-btn .remplir , section .topp .cas-btn .telecha
+{
+    background-color: var(--subColor);
+    border: none;
+    width: 270px;
+    height: 40px;
+    padding: 10px 60px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+
+}
+
+.demm-btn .premier:hover , .demm-btn .renouv:hover , 
+.suiv-item1 .btn .suiv-btn:hover , 
+section .topp .cas-btn .remplir:hover , section .topp .cas-btn .telecha:hover{
+    background-color: var(--mainColor);
+}
+
+.demm-btn span.lin-selec{
+    height: 60px;
+    width: 1px;
+    background-color: gray;
+    opacity: 0.6;
+}
+
+/* service suivie */
+section .toppp{
+    background: linear-gradient(90deg, var(--subColor) 50%, #ffff 50%);
+    padding: 50px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1px;
+    width: 950px;
+    margin: 65px auto;
+}
+
+section .toppp  .suiv-content{
+    display: flex;
+}
+
+section .toppp  .suiv-content .suiv-item{
+    flex: 1;
+}
+
+section .toppp  .suiv-content .suiv-item .suiv-title{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section .toppp  .suiv-content .suiv-item .suiv-desc{
+    padding: 0 30px;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+section .toppp  .suiv-content .suiv-item .suiv-list{
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-bottom: 20px;
+    padding: 0 75px;
+    line-height: 1.6;
+}
+
+section .toppp  .suiv-content .suiv-item1{
+    flex: 1;
+    padding: 20px;
+}
+
+.suiv-item1 .suiv-cnie {
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+section .toppp  .suiv-content .suiv-item1 .suiv-cnie .cnie-title{
+    color: var(--subColor);
+}
+
+.suiv-item1 .suiv-cnie .cnie-inp{
+    background-color: white;
+    border: 2px solid var(--subColor);
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+.suiv-item1 .suiv-cnie .jour , .suiv-item1 .suiv-cnie .mounth{
+    width: 30%;
+    background-color: white;
+    border: 2px solid var(--subColor);
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.suiv-item1 .suiv-cnie .year{
+    width: 35%;
+    background-color: white;
+    border: 2px solid var(--subColor);
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 15px;
+    
+}
+
+.suiv-item1 .btn{
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* service cas */
+
+section .topp .cass{
+    margin: 20px 0;
+}
+
+section .topp .cas-p{
+    font-weight: normal;
+    margin: 25px 0;
+    font-size: 14px;
+}
+
+section .topp .cas-btn {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .topp .cas-btn .remplir , section .topp .cas-btn .telecha{
+    width: 400px;
+
+}
